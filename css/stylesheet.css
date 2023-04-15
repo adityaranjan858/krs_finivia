@@ -1,0 +1,835 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "kanit_L";
+    src: url(../font-famiy/Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: "kanit_R";
+    src: url(../font-famiy/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: "kanit_M";
+    src: url(../font-famiy/Kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+    font-family: "kanit_B";
+    src: url(../font-famiy/Kanit/Kanit-Bold.ttf);
+}
+
+img{
+    width: 100%;
+}
+
+a,
+p,
+pre, h1,h2,h3,h4,h5,h6 {
+    color: #333;
+    font-family: "kanit_L";
+}
+
+a:hover{
+    color: #cf3426;
+    transition: all ease-out 0.3s;
+}
+svg path{
+    fill: #cf3426;
+}
+.svg-inline--fa {
+    font-size: 20px;
+}
+.main_container.redColored{
+    background: rgba(100,149,179,.4);
+    backdrop-filter: blur(54.3656px);
+    -webkit-backdrop-filter: blur(54.3656px);
+}
+/* top bar starts here */
+.tb_container {
+    background-color: #f4f4f4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tb_container a {
+    text-decoration: none;
+}
+
+.tb_l_link {
+    margin-left: 8px;
+}
+
+.tb_r_link {
+    margin-right: 15px;
+}
+
+.cstm_btn_topbar {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #cf3426;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-family: 'kanit_L';
+    color: white;
+    margin: 0 7px;
+}
+.tb_container_item{    
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.top_login_sidebar::after{
+    content: "";
+    border: 1px solid #cf3426;
+    position: absolute;
+    right: 33%;
+    width: 1px;
+    height: 25px;
+}
+/* top bar ends here */
+
+/* navbar starts here */
+.logo {
+    height: 70px;
+}
+.logo.scroll_logo{
+    height: 40px;
+    transition: all 0.6s ease-out 0s;
+}
+
+.logo_text {
+    position: relative;
+}
+.logo_sub_text {
+    position: absolute;
+    left: 162px;
+    top: 58px;
+}
+.logo_sub_text.scroll_logo_sub_text{
+    position: absolute;
+    left: 75px;
+    top: 32px;
+    transition: all 0.6s ease-out 0s;
+}
+
+.logo_text span {
+    font-family: "kanit_B";
+}
+
+.logo_text sub {
+    letter-spacing: -0.9px;
+    float: right;
+}
+
+.display-5 {
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 300;
+    line-height: 0.9;
+}
+
+.main_nav_btn{
+    background-color: lightgray;
+}
+.main_container{
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(44,71,92,1));
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+    font-family: "kanit_R";
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #cf3426;
+    transition: all ease-out 0.3s;
+}
+
+
+.navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* navbar ends here */
+
+/* banner starts here */
+.imgcontainer{
+    background-color: floralwhite;
+}
+.imgcontainer img{
+    opacity: 0.5;
+}
+.reg_items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 8.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+.imgcontainer h1 {
+    font-family: "kanit_R";
+}
+.imgcontainer h1 span {
+    font-family: "kanit_B";
+}
+.imgcontainer p {
+    font-family: "kanit_M";
+    font-size: 25px;
+}
+.reg_btn {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #cf3426;
+    padding: 5px 30px;
+    font-size: 20px;
+    font-family: 'kanit_R';
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+.reg_btn:hover, .cstm_btn_topbar:hover{
+    color: #cf3426;
+    background-color: transparent;
+    border: 1px solid rgb(207,52,38);
+    transition: all ease-out 0.3s;
+}
+.ban_imgs{
+    width: 3000px;
+    height: 718px;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #cf3426;
+}
+/* banner ends here */
+
+/* our services starts here */
+.section_heading {
+    text-align: center;
+    margin: 0px 0 50px;
+    padding: 80px 0 0;
+}
+.section_heading h6{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #a5a5a5;
+}
+.section_heading h2{
+    font-family: 'kanit_B';
+}
+
+.section_heading h2 span{
+    color: #cf3426;
+}
+.service_sec_card{
+    border: none;
+}
+.service_sec_card .card-body{
+    border-radius: 15px;
+    transition: all ease-out 0.3s;
+}
+
+.service_sec_card .card-title{
+    font-family: "kanit_M";
+    text-align: center;
+}
+.service_sec_card .card-text{
+    color: #838383;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 400;
+    text-align: justify;
+}
+/* .service_sec_card .card-body:hover , .service_sec_card .card-text:hover {
+    background-color: #cf3426;
+    color: white;
+} */
+.service_sec_card:hover .card-text , .service_sec_card:hover .card-title{
+    color: white;
+    transition: all ease-out 0.3s;
+}
+.service_sec_card:hover .card-body {
+    background-color: #cf3426;
+    -webkit-box-shadow: 0px 1px 13px 0px rgba(207, 52, 38, 0.75);
+    -moz-box-shadow:    0px 1px 13px 0px rgba(207, 52, 38, 0.75);
+    box-shadow:         0px 1px 13px 0px rgba(207, 52, 38, 0.75);
+    border-radius: 15px;
+    transition: all ease-out 0.3s;
+}
+.img_zoom{
+    overflow: hidden;
+}
+.service_sec_card:hover img{
+    transform: scale(1.1);
+    transition: all ease-out 0.4s;
+}
+
+/* our services ends here */
+
+/* About us starts here */
+.abt_us_content > p, .abt_us_content > ul{
+    color: #838383;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+.abt_us_content {
+    margin: auto;
+}
+.abt_us_content .sub_heading{
+    font-family: "kanit_M";
+}
+.about_section {
+    background-image: url(../media/about-us-background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+/* About us ends here */
+
+/* Achievements bar starts here */
+.achievements_sec_container .card{
+    background-color: transparent;
+    border: none;
+}
+.achievements_sec_container{
+    background-color: #003679;
+}
+.achievements_content {
+    padding: 0;
+}
+.achievements_content .card-title {
+    color: white;
+    margin-bottom: 5px;
+    font-family: 'kanit_L';
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+.achievements_content p {
+    font-size: 25px;
+    font-family: 'kanit_M';
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.achievements_icons, .achievements_icons path {
+    font-size: 60px;
+    fill: #fff;
+}
+.achievements_contact{
+    font-size: 25px !important;
+    font-family: 'kanit_M' !important;
+}
+.achievements_icons_plus path{
+    fill: #fff;
+}
+/* Achievements bar ends here */
+
+/* association starts here */
+.connection_images {
+    width: 250px;
+    margin: 0 auto;
+}
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+/* association ends here */
+
+/* testimonial_sec starts here */
+.blockquote_container{
+    position: relative;
+}
+.blockquote_item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blockquote {
+    padding: 60px 0px 0px;
+    position: relative;
+}
+.blockquote p {
+    font-family: 'kanit_L';
+    font-size: 26px;
+    color: white;
+    font-style: italic;
+}
+.blockquote-footer {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: .875em;
+    color: white;
+}
+
+.blockquote:before {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    top: -70px;
+    font-weight: 900;
+    content: "\f10e";
+    font-size: 80px;
+    color: #cf3426;
+   
+}
+
+.blockquote::after {
+    content: "";
+    bottom: -68px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    border-bottom: 3px solid #cf3426;
+    height: 3px;
+    width: 200px;
+}
+
+/* testimonial_sec ends here */
+
+/* Get in touch_sec starts here */
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #cf3426;
+}
+.form-control{
+    border-radius: 25px;
+}
+.form-label {
+    margin-bottom: .5rem;
+    font-family: 'kanit_R';
+}
+.form-control::placeholder {
+    color: grey;
+    opacity: 0.7;
+}
+.getintouch_sec {
+    background-image: url(../media/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    background-attachment: scroll;
+}
+.contact_details a{
+    text-decoration: none;
+}
+.contact_details h3{
+    text-align: center;
+    font-family: "kanit_M";
+}
+.fas_circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid red;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px 3px 0px;
+}
+.contacts_item span {
+    padding: 0px 10px;
+}
+.contacts_item{
+    display: flex;
+    align-items: center;
+}
+.contact_details ul li::marker{
+    color: rgb(207, 52, 38);
+}
+.contact_details ul li span{
+    font-family: 'kanit_R';
+    color: #333;
+}
+.contact_details ul li{
+    list-style: disc;
+    font-size: 16px;
+}
+address {
+    line-height: 1.2;
+}
+.contacts_item a, .contacts_item address, .contacts_item, .contact_details ul li {
+    color: #838383;
+}   
+.contact_quote{
+    width: 50%;
+    margin: 40px auto;
+    font-family: 'kanit_R';
+}
+/* Get in touch_sec ends here */
+
+/* Footer sec starts here */
+.footer_container{
+    padding: 69px 69px 40px;
+    border-top-left-radius: 150px;
+    background-image: linear-gradient(to left top, #664b00, #75360e, #7b1f24, #740c3d, #5c1356, #5a2d6c, #56427f, #6e71a1, #c5c1c1, #e3e0ff, #e1dfe7, #fffefe);
+}
+.footer_logo{
+    width: 150px;
+}
+.footer_menu ul{
+padding: 0;
+}
+.footer_menu ul li a:hover{
+    color: #cf3426;
+}
+
+.footer_menu ul li a{
+    text-decoration: none;
+    font-family: 'kanit_L';
+    font-size: 20px;
+    color: white;
+}
+.footer_menu ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 5px;
+}
+.footer_menu h2{
+    font-family: 'kanit_M';
+    color: white;
+}
+.footer_bottom{
+    background-color: #304146;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding: 10px;
+}
+.footer_bar{
+    border-right: 2px solid #cf3426;
+    text-align: center;
+}
+.footer_bar p{
+    font-family: 'kanit_R';
+    font-size: 20px;
+    color: white;
+}
+/* Footer sec ends here */
+
+
+
+
+
+/* Media Query starts here  */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    /* testimonial starts here */
+    .blockquote::after {
+        bottom: -46px;
+    }
+    .blockquote_item {
+        width: 75%;
+    }
+    /* testimonial ends here */
+
+     /* get in touch starts here */
+     .contact_quote {
+        width: 70%;
+    }
+    /* get in touch ends here */
+ }
+
+@media screen and (max-width: 1200px) and (min-width: 992px){
+    /* achievments starts here */
+    .achievements_icons, .achievements_icons path {
+        font-size: 45px;
+    }
+    .achievements_contact {
+        font-size: 22px !important;
+    }
+    /* achievments starts here */
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    /* bannser starts here */
+    .ban_img3{
+        object-position: right;
+    }
+    /* bannser starts here */
+
+        /* testimonial starts here */
+    .blockquote p {
+        font-size: 22px;
+    }
+        /* testimonial ends here */
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    /* navbar starts here */
+    .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+    /* #navbarNavDropdown {
+        position: absolute;
+        width: 100%;
+    } */
+    .navbar-light .navbar-nav .nav-link {
+        border-radius: 30px;
+        font-weight: 500;
+        margin: 3px;
+        font-size: 20px;
+        color: black;
+        letter-spacing: 1px;
+        padding: 3px 50px;
+    }    
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+        color: #cf3426;
+        background: white;
+    }
+    /* navbar ends here */
+
+    /* about us starts here */
+    .abt_us_content {
+        margin: 30px auto;
+    }
+    /* about us ends here */
+
+    /* testimonial starts here */
+
+    .blockquote:before {
+        position: absolute;
+        font-family: 'Font Awesome 5 Free';
+        top: -30px;
+        font-weight: 900;
+        content: "\f10e";
+        font-size: 60px;
+        color: #cf3426;
+    }
+    .blockquote::after {
+        bottom: -32px;
+    }
+    .blockquote p {
+        font-size: 18px;
+    }
+        /* testimonial ends here */
+
+        /* footer starts here */
+        .footer_menu ul li a {
+            font-size: 18px;
+        }
+        .footer_menu h2 {
+            font-size: 24px;
+        }
+        .footer_bar p {
+            font-size: 18px;
+            white-space: nowrap;
+        }
+        .footer_bar .reg_btn {
+            white-space: nowrap;
+            font-size: 16px;
+        }
+        .footer_logo {
+            width: 110px;
+        }
+        
+        /* footer ends here */
+
+       
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    /* top bar starts here */
+    .tb_container_item{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .top_l_sec{    
+        margin-bottom: 15px;
+    }
+    .top_login_sidebar::after {
+        content: "";
+        border: 1px solid #cf3426;
+        position: absolute;
+        right: 47px;
+        top: 0px;
+        transform: translate(-47px, 0px);
+        width: 1px;
+        height: 25px;
+        display: block;
+    }
+    /* top bar ends here */
+    
+    /* banner starts here */
+    .ban_img2 {
+        object-position: center;
+    }
+    /* banner ends here */
+
+    /* acheivements starts here */
+    .achievements_icons, .achievements_icons path {
+        font-size: 40px;
+        fill: #fff;
+    }
+    .achievements_content {
+        text-align: center;
+    }
+    /* acheivements starts here */
+
+    /* testimonial starts here */
+    .blockquote:before {
+        top: -5px;
+        font-size: 42px;
+    }
+    .blockquote::after {
+        bottom: -20px;
+    }
+    .blockquote_container img{
+        height: 331px;
+        object-fit: cover;
+        object-position: center;
+    }
+    /* testimonial ends here */
+
+    /* footer starts here */
+    .footer_bar {
+        border-right: none;
+        margin-bottom: 60px;
+        justify-content: space-around;
+        display: flex;
+    }
+    .footer_container {
+        padding: 69px 69px 0px;
+    }
+    .footer_container {
+        border-top-left-radius: unset;
+    }
+    /* footer ends here */
+
+
+ }
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+        /* top bar starts here */
+    .top_l_sec {
+        justify-content: space-between;
+        width: 100%;
+    }
+        /* top bar ends here */
+
+         /* navbar starts here */
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: 500;
+        margin: 0px;
+        font-size: 15px;
+    }
+     /* navbar ends here */
+
+     /* banner starts here */
+    .ban_img3 {
+        object-position: center;
+    }
+    .reg_btn{
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    /* banner ends here */
+
+    /* achievements starts here */
+    .achievement_item{
+        text-align: center;
+    }
+    .achievement_container{
+        margin-bottom: 20px;
+    }
+    /* achievements ends here */
+
+    /* testimonials starts here */
+    .blockquote_item {
+        width: 85%;
+    }
+    .blockquote p {
+        font-size: 15px;
+    }
+    .blockquote-footer {
+        font-size: 15px;
+    }
+    
+    /* testimonials ends here */
+
+         /* get in touch starts here */
+         .contact_quote {
+            width: 90%;
+        }
+        .contact_container{
+            margin: 48px 0px;
+        }
+        /* get in touch ends here */
+        
+        /* footer starts here */
+        .footer_bar {
+            display: inline-block;
+        }
+        .footer_bar p {
+            margin-top: 25px;
+        }
+        /* footer ends here */
+
+
+ }
+
+ @media (max-width: 480px) {
+    /* top bar starts here */
+    .top_l_sec{    
+        flex-direction: column;
+    }
+    .tb_l_link {
+        margin-left: 0px;
+    }
+    /* top bar ends here */
+    
+    /* banner starts here */
+    .ban_img2 {
+        object-position: center;
+    }
+    /* banner ends here */
+
+} 
+
+@media (max-width: 350px) {
+     /* footer starts here */
+     .footer_bar p {
+        font-size: 16px;
+        white-space: unset;
+        letter-spacing: -1px;
+        font-family: 'kanit_M';
+    }
+    .footer_bar .reg_btn {
+        white-space: unset;
+        font-size: 12px;
+    }
+    .footer_menu h2 {
+        font-size: 20px;
+    }
+    .footer_menu ul li a {
+        font-family: 'kanit_R';
+    }
+    /* footer ends here */
+}
+
+/* Media Query ends here  */
